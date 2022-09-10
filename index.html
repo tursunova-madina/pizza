@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- BS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <!-- main css -->
+  <link rel="stylesheet" href="./styles/stylesheet.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="bg-danger">
+    <div class="container">
+      <nav class="nav nav-logo">
+        <h3 class="text-light">PIZZA-UZ</h3>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="text-center mt-5">Pitsa buyurtma qilish</h1>
+      <div class="d-flex g-0 text-center ">
+        <div class=" w-50 d-grid flex-column align-items-center">
+          <div class="pizza_bread d-flex flex-column mt-3 text-light">
+            <h4 class="pizza_bread_title text-light">Noni qanday bo'lsin?</h4>
+            <select class="beard" id="mySelect" onchange="myunction()">
+              <option value="Yupqa">Yupqa</option>
+              <option value="O'rtacha">O'rtacha</option>
+              <option value="Qalin">Qalin</option>
+            </select>
+          </div>
+
+          <div class="pizza_diametr d-flex flex-column">
+            <h4 class="pizza_diametr_title text-start mt-3 text-light">Kattaligi</h4>
+
+            <div class="pizza_diametr_wrapper">
+              <div class="diametr_circle sizes " id="size">25cm</div>
+              <div class="diametr_circle sizes" id="size">30cm</div>
+              <div class="diametr_circle sizes" id="size">35cm</div>
+            </div>
+          </div>
+
+          <div class="pizza_ingredients mt-3">
+            <h4 class="pizza_ingredients_title text-light align-items-md-start">
+              Tarkibi nimalardan iborat?
+            </h4>
+            <div class="products">
+              <div class="pro">
+                <label for="tomato" class="text-light"> <input type="checkbox" id="ingredients"  value="Pomidor" />
+                  Pomidor </label>
+                <label for="" class="text-light"><input type="checkbox" id="ingredients" value="Kurka go'shti" /> Kurka go'shti
+                </label>
+                <label for="" class="text-light"> <input type="checkbox"  id="ingredients"  value="Zaytun"/> Zaytun</label>
+              </div>
+              <div class="pro">
+                <label for="" class="text-light">
+                  <input type="checkbox"  id="ingredients" value="Tuzlangan bodring" /> Tuzlangan bodring
+                </label>
+                <label for="" class="text-light"> <input type="checkbox" id="ingredients" value="Qo'ziqorin"  />
+                  Qo'ziqorin</label>
+                <label for="" class="text-light"> <input type="checkbox" value="Qazi" id="ingredients" /> Qazi</label>
+              </div>
+            </div>
+
+            <div class="additional mt-3">
+              <h4 class="additional_title text-light">Qo'shimchalar</h4>
+              <div class="additional_card">
+                <label for="" class="achciq text-light">
+                  <input type="checkbox" value="Achchiq" id="additional" />
+                  Achchiq
+                </label>
+                <label for="" class="sosis text-light">
+                  <input type="checkbox" value="Sosiska" id="additional" />
+                  Sosiska
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="order d-flex flex-column h">
+          <div class="first_order">
+            <h4 class="text-light">Non:</h4>
+            <p id="twentyfive" class="text-light"></p>
+          </div>
+          <div class="second_order">
+            <h4 class="text-light">Kattaligi: <span id="order" class="text-light"></span></h4>
+
+          </div>
+          <div class="third_order">
+            <h4 class="text-light">Ustida: </h4>
+            <div class="third_order_wrapper ingredient" id="">
+          
+            </div>
+          </div>
+          <div class="fourth_order">
+            <h4 class="text-light">Qo'shimcha:</h4>
+            <div class="adding">
+
+            </div>
+          </div>
+
+          <button class="btn btn-success p-2">Buyurtma berish</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-danger ">
+    <div class="container">
+      <nav class="nav nav-logo">
+        <h3 class="text-light">PIZZA-UZ</h3>
+      </nav>
+    </div>
+  </footer>
+</body>
+<script src="./js/plugin.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/problems.js"></script>
+
+</html>

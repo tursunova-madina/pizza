@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pizza_diametr_wrapper {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 310px;
+  margin-top: 10px;
+}
+.sizes {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  padding-top: 20px;
+  margin-right: 10px;
+}
+
+#size:hover {
+  cursor: pointer;
+}
+
+.active {
+  border: 1px solid black;
+background-image:url("../images/cards.jpg");
+  color: white;
+  cursor: pointer;
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.col-md-8 {
+  justify-items: left;
+}
+
+.mt-3 {
+  margin-left: 20px;
+}
+.beard {
+  padding: 8px;
+  width: 190px;
+}
+.pizza_ingredients_title {
+  margin-left: -80px;
+}
+.pro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pro:nth-child(2) {
+  margin-left: 50px;
+}
+
+input {
+  width: 20px;
+  height: 20px;
+}
+
+label {
+  font-size: larger !important;
+  margin-top: 5px;
+}
+
+.additional_title {
+  margin-left: -200px;
+}
+
+.additional_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: -65px;
+}
+
+.line {
+  height: 75vh;
+  width: 2px;
+  background: #000;
+}
+
+.order {
+  height: 75vh;
+  justify-content: space-around;
+}
+footer {
+  margin-top: 20px;
+}
+.t {
+  display: none;
+  margin-top: 20px;
+}
+
+.third_order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.g-0 {
+  background-image: url("../images/italian-pizza-pizza-cooking-ingredients-dark-background_179369-231.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+
